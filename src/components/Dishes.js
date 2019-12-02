@@ -5,15 +5,15 @@ function Dishes(props){
     return (
         <div className="dishes-container">
             {
-                props.dishes.map((obj)=>{
+                props.dishes.map((dish)=>{
                     return (
                         <div className="dish-detail" key="{props.dish.id}">
-                            <img src={props.dish.img}/>
-                            <label key={props.dish.id} >{props.dish.name}</label>
+                            <img src={dish.img}/>
+                            <label key={dish.id} >{dish.name}</label>
                             <p>
-                                {props.dish.discription}
+                                {dish.discription}
                             </p>
-                            <span className="dish-detail-price">{props.dish.price}</span>
+                            <span className="dish-detail-price">{dish.price}</span>
 
                         </div>
                     )

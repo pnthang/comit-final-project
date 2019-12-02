@@ -42,11 +42,13 @@ body{
 }
 .left-categories{
   padding-left:20px;
+  padding-right:20px;
   font-family: 'Pacifico', cursive;
 }
 .category-detail{
   display:block;
   padding: 5px;
+  margin-right: -10px;
 }
 .active{
   background-color: #43617e;

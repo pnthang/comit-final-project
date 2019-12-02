@@ -17,7 +17,7 @@ class App extends React.Component {
       data:[],
       categories:[],
       dishes: [],
-      selectedCat: [],
+      catSelected: [],
       selectedDishes:[],
       favoriesDishes:[]
     }
@@ -98,7 +98,9 @@ class App extends React.Component {
                 <h1>Nelli's Kitchen</h1>
                 <Categories
                   categories={this.state.categories}
-                  catSelected={this.catSelected} />
+                  catSelectedId={this.state.catSelected.id}
+                  selectCat={this.selectCat}
+                />
               </div>
               <div className="main-container">
                 <Header
