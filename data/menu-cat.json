@@ -1,0 +1,12 @@
+[
+    {"id":"01","name":"Breakfast","note":"Additional charge of 1.00 after 11:00am"},
+    {"id":"02","name":"Salad - Soup - Miscellaneous","note":"--"},
+    {"id":"03","name":"Cold sandwhich","note":"--"},
+    {"id":"04","name":"Hot sandwhich","note":"Served with fries"},
+    {"id":"05","name":"Burger","note":"Sesame bun dressed with mayonnaise, mustard, ketchup, lettuce, tomato and pickle \n Served with fries"},
+    {"id":"06","name":"Vietnamese","note":"--"},
+    {"id":"07","name":"Nellie special","note":"--"},
+    {"id":"08","name":"Homemade dessert","note":"--"},
+    {"id":"09","name":"Beverage","note":"--"},
+    {"id":"10","name":"Vietnamese sub","note":"Price for take out - dine in add 3.00"}
+]
