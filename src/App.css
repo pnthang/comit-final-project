@@ -1,22 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Courgette|Great+Vibes|Lobster+Two|Luckiest+Guy|Pacifico|Satisfy|Shadows+Into+Light&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #273747;
+  color: #333;
+  font-size: 1em;
+  font-weight: 400;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  /* font-family: 'Shadows Into Light', cursive;
+  font-family: 'Courgette', cursive;
+  font-family: 'Satisfy', cursive;
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Lobster Two', cursive;
+  font-family: 'Cookie', cursive;
+  font-family: 'Luckiest Guy', cursive; */
+}
+
+/* left */
+.left-container{
+  display:flex;
+  flex-direction: column;
+  background-color: #273747;
+  /* border-right: 1px solid #DDD; */
+  color: white;
+  /* width:30vw; */
+  padding-right:10px;
+  min-height: 100vh;
+  height:100%;
+}
+.left-logo{
+  width:200px;
+}
+.left-categories{
+  padding-left:20px;
+  font-family: 'Pacifico', cursive;
+}
+.category-detail{
+  display:block;
+  padding: 5px;
+}
+.active{
+  background-color: #43617e;
+  padding: 10px;
+}
+.category-detail:hover{
+  background-color: #43617e;
+  padding: 10px;
+}
+
+/* main */
+.main-container{
+  display:flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: whitesmoke;
+}
+header {
+  display: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding-top:20px;
+}
+header > input {
+  width:90%;
+}
+/* right */
+.right-container{
+  display:flex;
+}
+
+/* loading */
+.loading-container{
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color:whitesmoke;
+  z-index: 1;
+  text-align: center;
+  /* background-image:url('/images/background/5.jpg');
+  filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+.loading-logo{
+  max-width: 40vw;
+  max-height: 40vh;
+}
+.loading{
+  z-index: 9999;
+  font-size: calc(16px + 10vmin);
+  color: darkorange;
+  /* font-family: 'Pacifico', cursive; */
 }
 
-.App-link {
-  color: #09d3ac;
-}
