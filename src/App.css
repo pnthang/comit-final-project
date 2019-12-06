@@ -39,6 +39,7 @@ body{
 }
 .left-logo{
   width:200px;
+
 }
 .left-categories{
   padding-left:20px;
@@ -49,9 +50,11 @@ body{
   display:block;
   padding: 5px;
   margin-right: -10px;
+  cursor:pointer;
 }
 .active{
   background-color: #43617e;
+  color: orange;
   padding: 10px;
 }
 .category-detail:hover{
@@ -66,21 +69,48 @@ body{
   padding-left: 20px;
   padding-right: 10px;
   background-color: whitesmoke;
+  min-width: 50vw;
 }
+/* header */
 header {
-  display: flex;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width:100%;
   padding-top:20px;
+  border-bottom: 1px solid #DDD;
 }
-header > input {
-  width:90%;
+header > .searchBox {
+  width:100%;
+  /* font-size: calc(10px + 2vmin); */
+  padding: 5px 5px 8px 8px;
+  margin-bottom: 10px;
+}
+/* dishes */
+.dish-detail{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.dish-image{
+  border-radius: 50%;
+}
+.dish-information{
+  padding-left:10px;
+}
+.dish-detail-price{
+  color:red;
 }
 /* right */
 .right-container{
   display:flex;
-}
 
+}
+.selected-container{
+  background-color: palegreen;
+  padding-left:10px;
+  width:100%;
+}
 /* loading */
 .loading-container{
   display:flex;

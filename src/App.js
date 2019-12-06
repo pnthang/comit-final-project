@@ -4,6 +4,7 @@ import Loading from './components/Loading';
 import Header from './components/Header'
 import Categories from './components/Categories'
 import Dishes from './components/Dishes'
+import Selected from './components/Selected'
 
 import './App.css';
 
@@ -62,7 +63,10 @@ class App extends React.Component {
     )
   }
   selectDish = (addDish) => {
-    const selectedDishesData = this.state.selectedDishes.push(addDish)
+    console.log(addDish);
+
+    const selectedDishesData = this.state.selectedDishes;
+    selectedDishesData.push(addDish);
     this.setState(
       {
         selectedDishes:selectedDishesData,
@@ -70,6 +74,7 @@ class App extends React.Component {
     )
   }
   removeDish = (rmDish) => {
+    console.log(rmDish);
     const selectedDishesData = this.state.selectedDishes.filter((dish)=>{ return dish.id!==rmDish.id})
     this.setState(
       {
@@ -95,7 +100,7 @@ class App extends React.Component {
             <div className="App">
               <div className="left-container">
                 {/* <img className="left-logo" src="./images/logo.jpg"/> */}
-                <h1>Nelli's Kitchen</h1>
+                <h1>Categories</h1>
                 <Categories
                   categories={this.state.categories}
                   catSelectedId={this.state.catSelected.id}
@@ -108,11 +113,13 @@ class App extends React.Component {
                 <Dishes
                   dishes={this.state.dishes}
                   selectDish={this.selectDish}
-                  removeDish={this.removeDish}
                   />
               </div>
               <div className="right-container">
-
+                <Selected
+                    selectedDishes={this.state.selectedDishes}
+                    removeDish={this.removeDish}
+                    />
               </div>
 
             </div>

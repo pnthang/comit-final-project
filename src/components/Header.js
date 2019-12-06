@@ -3,7 +3,7 @@ import React from 'react'
 function Header(props){
     return (
         <header>
-            <input onChange={props.search} placeholder="Search ..."/>
+            <input className="searchBox" onChange={props.search} placeholder="Search ..."/>
         </header>
     )
 }

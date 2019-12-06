@@ -20,3 +20,6 @@ Allow restaurant’s customer chose and order dishes when they come.
 4. Cancel:	Close popup
 5. Order:	The selected dish appears in the selected list
 6. Make order:	Checkout page display
+
+## Demo page
+[Order Dishes Demo](https://namtranhoai.github.com/comit-final-project).
