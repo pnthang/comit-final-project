@@ -17,7 +17,7 @@ class Intro extends Component {
       loading: true
     });
     axios
-      .get("../data/slides.json")
+      .get("/comit-final-project/data/slides.json")
       .then(res => {
         this.setState({
           slides: res.data,

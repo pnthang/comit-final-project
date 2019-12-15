@@ -59,7 +59,7 @@ export default function(state = initialState, action) {
     case SET_UNFAVORITE:
       let index = state.dishes.findIndex((d)=>d.code === action.payload.code);
       state.dishes[index].favorite = "1";
-      console.log(state.dishes[index]);
+      // console.log(state.dishes[index]);
       return state.dishes.map(d =>
         d.code === action.code ? { ...d, favorite: !d.favorite } : d);
 

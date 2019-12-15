@@ -15,7 +15,7 @@ export function fetchData() {
     return dispatch => {
       dispatch(fetchDataBegin());
       return axios
-        .get("../../data/dishes.json")
+        .get("/comit-final-project/data/dishes.json")
        // .then(handleErrors)
         .then(res => {
             console.log(res.data);

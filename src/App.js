@@ -42,12 +42,13 @@ class App extends Component{
             <MuiThemeProvider theme={theme}>
                 <Provider store={store}>
                 <div className="App">
+                    <Router basename="/comit-final-project" />
                     <Router>
                         <Navbar/>
                         <div className="container">
                             <Switch>
-                                <Route exact path="/" component={Home}/>
-                                <Route exact path="/intro" component={Intro}/>
+                                <Route exact path="/" component={Intro}/>
+                                <Route exact path="/order" component={Home}/>
                                 <AuthRoute exact path="/login" component={Login} />
                                 <AuthRoute exact path="/admin" component={Admin} authenticated/>
                             </Switch>

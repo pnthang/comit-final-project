@@ -30,7 +30,7 @@ class Navbar extends Component {
           <Button
             color="inherit"
             component={Link}
-            to="/intro"
+            to="/order"
             className="nav-button"
           >
             ORDER
