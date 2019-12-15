@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Order dish",
+  "name": "Order dishes",
   "icons": [
     {
       "src": "dish.png",
@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "./comit-final-project",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
