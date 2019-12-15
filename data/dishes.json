@@ -1,0 +1,639 @@
+[
+  {
+    "favorite": "1",
+    "number": "1",
+    "code": "0101A",
+    "tag": "1",
+    "name": "Traditional breakfast",
+    "description": "Meat (bacon (3) or ham (2) or sausage (1)), egg (2), toast (2), jam (2) and hashbrown",
+    "basePrice": "675",
+    "imageUrl": "./images/dishes/0101A.jpg",
+    "includes": [
+      {
+        "name": "Bread black with nut",
+        "adjustPrice": "+2",
+        "options": [
+          {
+            "name": "easy",
+            "adjustPrice": "-0.5"
+          },
+          {
+            "name": "medium",
+            "adjustPrice": "0"
+          },
+          {
+            "name": "hard",
+            "adjustPrice": "+0.5"
+          }
+        ]
+      },
+      {
+        "name": "Eggs (2)",
+        "adjustPrice": "0",
+        "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+      },
+      {
+        "name": "Jam & Toast (2)",
+        "adjustPrice": "0",
+        "options":[]
+      }
+    ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0101B",
+    "tag": "1",
+    "name": "Hungry man breakfast",
+    "description": "Meat (bacon (3) or ham (2) or sausage (1)), egg (3), toast (2), jam (2), pancake (3) and hashbrown",
+    "basePrice": "975",
+    "imageUrl": "./images/dishes/0101B.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0101C",
+    "tag": "1",
+    "name": "Nellie breakfast",
+    "description": "Homemade hamburger steak with sauteed onion, egg (3), toast (2), jam (2) and hashbrown",
+    "basePrice": "975",
+    "imageUrl": "./images/dishes/0101C.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0102A",
+    "tag": "1",
+    "name": "Five pancakes",
+    "description": "Served with maple syrup and butter",
+    "basePrice": "650",
+    "imageUrl": "./images/dishes/0102A.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0102B",
+    "tag": "1",
+    "name": "Three pancakes",
+    "description": "Served with maple syrup and butter",
+    "basePrice": "425",
+    "imageUrl": "./images/dishes/0102B.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0102C",
+    "tag": "1",
+    "name": "Three pancakes with meat",
+    "description": "Served with maple syrup and butter and meat (ham or bacon or sausage)",
+    "basePrice": "650",
+    "imageUrl": "./images/dishes/0102C.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0102D",
+    "tag": "1",
+    "name": "Three pancakes with egg",
+    "description": "Served with maple syrup and butter and 2 egg",
+    "basePrice": "650",
+    "imageUrl": "./images/dishes/0102D.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0103A",
+    "tag": "1",
+    "name": "Ham cheese omelette",
+    "description": "2-egged omelette, ham (1), cheese (1), toast (2), jam (2) and hashbrown",
+    "basePrice": "850",
+    "imageUrl": "./images/dishes/0103A.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0103B",
+    "tag": "1",
+    "name": "Vegetarian omelette (no cheese)",
+    "description": "Celery, onion, mushroom, green onion, toast (2) and jam (2), hashbrown",
+    "basePrice": "850",
+    "imageUrl": "./images/dishes/0103B.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0103C",
+    "tag": "1",
+    "name": "Vegetarian omelettette with cheese",
+    "description": "Celery, onion, mushroom, green onion, cheddar cheese (1), toast (2) and jam (2), hashbrown",
+    "basePrice": "950",
+    "imageUrl": "./images/dishes/0103C.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0103D",
+    "tag": "1",
+    "name": "Western omelette (no cheese)",
+    "description": "Ham, celery, onion, mushroom, green onion, toast (2), jam (2) and hashbrown",
+    "basePrice": "850",
+    "imageUrl": "./images/dishes/0102A.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  },
+  {
+    "favorite": "0",
+    "number": "1",
+    "code": "0103E",
+    "tag": "1",
+    "name": "Western omelette with cheese",
+    "description": "Ham, celery, onion, mushroom, green onion, cheddar cheese (1), toast (2), jam (2) and hashbrown",
+    "basePrice": "950",
+    "imageUrl": "./images/dishes/0102A.jpg",
+    "includes": [
+        {
+          "name": "Bread black with nut",
+          "adjustPrice": "+2",
+          "options": [
+            {
+              "name": "easy",
+              "adjustPrice": "-0.5"
+            },
+            {
+              "name": "medium",
+              "adjustPrice": "0"
+            },
+            {
+              "name": "hard",
+              "adjustPrice": "+0.5"
+            }
+          ]
+        },
+        {
+          "name": "Eggs (2)",
+          "adjustPrice": "0",
+          "options": [
+              {
+                "name": "easy",
+                "adjustPrice": "-0.5"
+              },
+              {
+                "name": "medium",
+                "adjustPrice": "0"
+              },
+              {
+                "name": "hard",
+                "adjustPrice": "+0.5"
+              }
+            ]
+        },
+        {
+          "name": "Jam & Toast (2)",
+          "adjustPrice": "0",
+          "options":[]
+        }
+      ]
+  }
+
+]
