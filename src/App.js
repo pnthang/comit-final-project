@@ -39,20 +39,20 @@ if(token){
 class App extends Component{
 
     render(){
-        const baseUrl = '/comit-final-project';
+
         return (
             <MuiThemeProvider theme={theme}>
                 <Provider store={store}>
                 <div className="App">
-                    <Router basename={baseUrl} />
+                    <Router basename="/comit-final-project" />
                     <Router>
                         <Navbar/>
                         <div className="container">
                             <Switch>
-                                <Route exact path="/" component={Intro}/>
-                                <Route exact path="/order" component={Home}/>
-                                <AuthRoute exact path="/login" component={Login} />
-                                <AuthRoute exact path="/admin" component={Admin} authenticated/>
+                                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Intro}/>
+                                <Route exact path={`${process.env.PUBLIC_URL}/order`} component={Home}/>
+                                <AuthRoute exact path={`${process.env.PUBLIC_URL}/login`} component={Login} />
+                                <AuthRoute exact path={`${process.env.PUBLIC_URL}/admin`} component={Admin} authenticated/>
                             </Switch>
                         </div>
                         <NavbarBottom />

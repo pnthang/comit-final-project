@@ -15,7 +15,6 @@ import { openMCart } from "../redux/actions/dataActions";
 class Navbar extends Component {
 
   render() {
-    const baseUrl = '/comit-final-project';
     const {
       data: { cart }
     } = this.props;
@@ -25,7 +24,7 @@ class Navbar extends Component {
           <Button
             color="inherit"
             component={Link}
-            to={`${baseUrl}/`}
+            to={`${process.env.PUBLIC_URL}/`}
             className="nav-button"
           >
             Home
@@ -33,7 +32,7 @@ class Navbar extends Component {
           <Button
             color="inherit"
             component={Link}
-            to={`${baseUrl}/order`}
+            to={`${process.env.PUBLIC_URL}/order`}
             className="nav-button"
           >
             ORDER
@@ -49,7 +48,7 @@ class Navbar extends Component {
           <Button
             color="inherit"
             component={Link}
-            to="/admin"
+            to={`${process.env.PUBLIC_URL}/admin`}
             className="nav-button"
           >
             About
@@ -57,7 +56,7 @@ class Navbar extends Component {
           <Button
             color="inherit"
             component={Link}
-            to="/login"
+            to={`${process.env.PUBLIC_URL}/login`}
             className="nav-button"
           >
             Login

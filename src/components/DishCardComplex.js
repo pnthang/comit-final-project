@@ -113,7 +113,7 @@ class DishCardComplex extends Component {
       },
       loading
     } = this.props;
-    const imageBaseUrl = `/comit-final-project/`+(imageUrl ? imageUrl : "/dish.png");
+    const imageBaseUrl = (imageUrl ? imageUrl : "/dish.png");
     return (
       <Card className={classes.card}>
         <CardHeader
@@ -136,7 +136,7 @@ class DishCardComplex extends Component {
         />
         <CardMedia
           className={classes.media}
-          image={imageBaseUrl}
+          image={`${process.env.PUBLIC_URL}${imageBaseUrl}`}
           title={name}
         />
         <CardContent>
