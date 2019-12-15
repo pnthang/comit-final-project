@@ -2,7 +2,7 @@
   {
     "button": "Order",
     "description": "Meat (bacon (3) or ham (2) or sausage (1)), egg (2), toast (2), jam (2) and hashbrown",
-    "image": "./images/background/5.jpg",
+    "image": "/images/background/5.jpg",
     "title": "Traditional breakfast",
     "user": "Order Dish",
     "userProfile": "/images/dish.png"
