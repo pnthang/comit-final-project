@@ -1,136 +1,63 @@
-import React from 'react';
-import axios from 'axios';
-import Loading from './components/Loading';
-import Header from './components/Header'
-import Categories from './components/Categories'
-import Dishes from './components/Dishes'
-import Selected from './components/Selected'
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import './App.css';
+import {MuiThemeProvider} from '@material-ui/core/styles';
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 
+import themeFile from './util/theme';
+import jwtDecode from 'jwt-decode';
+// Redux
+import {Provider} from 'react-redux';
+import store from './redux/store';
+// Component
+import Navbar from './components/Navbar';
+import NavbarBottom from './components/NavbarBottom';
+import AuthRoute from './util/AuthRoute.js';
+// pages
+import Intro from './pages/Intro';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Admin from './pages/Admin';
 
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: false,
-      data:[],
-      categories:[],
-      dishes: [],
-      catSelected: [],
-      selectedDishes:[],
-      favoriesDishes:[]
+// theme color
+const theme = createMuiTheme(themeFile);
+const token = localStorage.IdToken;
+let authenticated;
+if(token){
+    const decodedToken = jwtDecode(token);
+    console.log(decodedToken);
+    if(decodedToken.ex *1000 <Date.now()){
+        window.location.href = '/login'
+        authenticated = false;
+    }else{
+        authenticated = true;
     }
-  }
-
-
-  componentWillMount(){
-    this.setState({loading: true});
-    axios.get('./data/menu-cat.json')
-          .then(res =>{
-            let cats = res.data
-            this.setState({
-              categories: cats,
-              catSelected: cats[0]
-            });
-          })
-          .catch(function(error){
-            console.log(error);
-          })
-    axios.get('./data/menu1.json')
-          .then(res =>{
-            let resData = res.data
-            let selectedData = this.state.data.filter((dish)=>{ return dish.catid===this.state.catSelected.id});
-            this.setState({
-              loading: false,
-              data: resData,
-              dishes: selectedData,
-            });
-          })
-          .catch(function(error){
-            console.log(error);
-          })
-
-  }
-  selectCat = (cat) => {
-    const selectedData = this.state.data.filter((dish)=>{ return dish.catid===cat.id});
-    this.setState(
-      {
-        catSelected:cat,
-        dishes: selectedData,
-      }
-    )
-  }
-  selectDish = (addDish) => {
-    console.log(addDish);
-
-    const selectedDishesData = this.state.selectedDishes;
-    selectedDishesData.push(addDish);
-    this.setState(
-      {
-        selectedDishes:selectedDishesData,
-      }
-    )
-  }
-  removeDish = (rmDish) => {
-    console.log(rmDish);
-    const selectedDishesData = this.state.selectedDishes.filter((dish)=>{ return dish.id!==rmDish.id})
-    this.setState(
-      {
-        selectedDishes:selectedDishesData,
-      }
-    )
-  }
-
-  search = (e) => {
-    const searchQ = e.target.value.toLocaleLowerCase();
-    const dishesData= this.state.data.filter(function(dishes) {
-      return dishes.name.toLocaleLowerCase().lastIndexOf(searchQ)>-1;
-    });
-    this.setState({
-        dishes: dishesData
-    })
-  }
-
-  render (){
-
-    if(this.state.loading === false) {
-        return(
-            <div className="App">
-              <div className="left-container">
-                {/* <img className="left-logo" src="./images/logo.jpg"/> */}
-                <h1>Categories</h1>
-                <Categories
-                  categories={this.state.categories}
-                  catSelectedId={this.state.catSelected.id}
-                  selectCat={this.selectCat}
-                />
-              </div>
-              <div className="main-container">
-                <Header
-                  search={this.search}/>
-                <Dishes
-                  dishes={this.state.dishes}
-                  selectDish={this.selectDish}
-                  />
-              </div>
-              <div className="right-container">
-                <Selected
-                    selectedDishes={this.state.selectedDishes}
-                    removeDish={this.removeDish}
-                    />
-              </div>
-
-            </div>
-        )
-     }else{
-        return (
-          <Loading />
-        )
-     }
-
-  }
 }
 
+
+class App extends Component{
+    render(){
+        return (
+            <MuiThemeProvider theme={theme}>
+                <Provider store={store}>
+                <div className="App">
+                    <Router>
+                        <Navbar/>
+                        <div className="container">
+                            <Switch>
+                                <Route exact path="/" component={Home}/>
+                                <Route exact path="/intro" component={Intro}/>
+                                <AuthRoute exact path="/login" component={Login} />
+                                <AuthRoute exact path="/admin" component={Admin} authenticated/>
+                            </Switch>
+                        </div>
+                        <NavbarBottom />
+                    </Router>
+                </div>
+                </Provider>
+            </MuiThemeProvider>
+        )
+    }
+}
 export default App;

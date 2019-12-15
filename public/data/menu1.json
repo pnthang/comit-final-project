@@ -1,154 +1,153 @@
-[
-      {"id":"0101A","catid":"01","name":"Traditional breakfast","description":"Meat (bacon (3) or ham (2) or sausage (1)), egg (2), toast (2), jam (2) and hashbrown","price":675},
-      {"id":"0101B","catid":"01","name":"Hungry man breakfast","description":"Meat (bacon (3) or ham (2) or sausage (1)), egg (3), toast (2), jam (2), pancake (3) and hashbrown","price":975},
-      {"id":"0101C","catid":"01","name":"Nellie breakfast","description":"Homemade hamburger steak with sauteed onion, egg (3), toast (2), jam (2) and hashbrown","price":975},
-      {"id":"0102A","catid":"01","name":"Five pancakes","description":"Served with maple syrup and butter","price":650},
-      {"id":"0102B","catid":"01","name":"Three pancakes","description":"Served with maple syrup and butter","price":425},
-      {"id":"0102C","catid":"01","name":"Three pancakes with meat","description":"Served with maple syrup and butter and meat (ham or bacon or sausage)","price":650},
-      {"id":"0102D","catid":"01","name":"Three pancakes with egg","description":"Served with maple syrup and butter and 2 egg","price":650},
-      {"id":"0103A","catid":"01","name":"Ham cheese omelette","description":"2-egged omelette, ham (1), cheese (1), toast (2), jam (2) and hashbrown","price":850},
-      {"id":"0103B","catid":"01","name":"Vegetarian omelette (no cheese)","description":"Celery, onion, mushroom, green onion, toast (2) and jam (2), hashbrown","price":850},
-      {"id":"0103C","catid":"01","name":"Vegetarian omelettette with cheese","description":"Celery, onion, mushroom, green onion, cheddar cheese (1), toast (2) and jam (2), hashbrown","price":950},
-      {"id":"0103D","catid":"01","name":"Western omelette (no cheese)","description":"Ham, celery, onion, mushroom, green onion, toast (2), jam (2) and hashbrown","price":850},
-      {"id":"0103E","catid":"01","name":"Western omelette with cheese","description":"Ham, celery, onion, mushroom, green onion, cheddar cheese (1), toast (2), jam (2) and hashbrown","price":950},
-      {"id":"0104A","catid":"01","name":"Hot oatmeal","description":"Served with milk and brown sugar","price":525},
-      {"id":"0104X","catid":"01","name":"Extra bread to oatmeal","description":"Add to hot oatmeal","price":125},
-      {"id":"0105A","catid":"01","name":"Breakie in a bun","description":"Bacon (1) and scrambled egg (1)","price":500},
-      {"id":"0105B","catid":"01","name":"Breakie in a bun w/ cheese","description":"Add cheddar cheese (1)","price":600},
-      {"id":"0201A","catid":"02","name":"Tossed Salad","description":"Iceberg lettuce, cucumber, carrot, celery and bread","price":575},
-      {"id":"0201B","catid":"02","name":"Small tossed salad","description":"No bread","price":425},
-      {"id":"0202A","catid":"02","name":"Caesar salad","description":"Romaine lettuce, Parmesan cheese, crouton, Caesar dressing and bread","price":575},
-      {"id":"0202B","catid":"02","name":"Small Caesar","description":"No bread","price":425},
-      {"id":"0203A","catid":"02","name":"Oriental salad","description":"Iceberg lettuce, cucumber, carrot pickle, vermicelli, fish sauce, choice of meat","price":775},
-      {"id":"0203B","catid":"02","name":"Vegetarian oriental salad","description":"Iceberg lettuce, cucumber, carrot pickle, vermicelli, tofu, mushroom, soya sauce","price":775},
-      {"id":"0204A","catid":"02","name":"Cabbage borscht","description":"Cabbage, onion, tomato juice, potato, celery, butter","price":425},
-      {"id":"0204B","catid":"02","name":"Beet borscht","description":"Beet, potato, cabbage, onion, chicken broth","price":425},
-      {"id":"0204C","catid":"02","name":"Wonton soup","description":"xx","price":425},
-      {"id":"0204X","catid":"02","name":"Extra bread to soup","description":"xx","price":125},
-      {"id":"0205A","catid":"02","name":"Daily soup","description":"xx","price":425},
-      {"id":"0205B","catid":"02","name":"Daily soup w/bread","description":"xx","price":525},
-      {"id":"0207A","catid":"02","name":"Fries","description":"Home cut fries","price":450},
-      {"id":"0207B","catid":"02","name":"Fries w gravy","description":"Add gravy","price":550},
-      {"id":"0207C","catid":"02","name":"Poutine","description":"Add cheese and gravy to fries","price":650},
-      {"id":"0208A","catid":"02","name":"Small fries","description":"Home cut fries, small size","price":325},
-      {"id":"0208B","catid":"02","name":"Small fries w gravy","description":"Add gravy","price":425},
-      {"id":"0208C","catid":"02","name":"Small poutine","description":"Add cheese and gravy to samll fries","price":525},
-      {"id":"0209A","catid":"02","name":"Fried wonton (6)","description":"","price":425},
-      {"id":"0301A","catid":"03","name":"Egg salad sandwich","description":"Hard boiled egg, diced celery, green onion, mayo, salt and pepper","price":550},
-      {"id":"0302A","catid":"03","name":"Salmon salad sandwich","description":"Pink salmon, diced celery, green onions, mayo, salt and pepper","price":550},
-      {"id":"0303A","catid":"03","name":"Chicken salad sandwich","description":"Diced chicken, celery, green onions, mayo, salt and pepper","price":550},
-      {"id":"0304A","catid":"03","name":"Ham and cheese sandwich","description":"Sliced ham, cheese and mayo","price":550},
-      {"id":"0401A","catid":"04","name":"Denver sandwich","description":"Egg, ham, cheese, green onions, celery and mayo between 2 slices of toast","price":875},
-      {"id":"0402A","catid":"04","name":"BLT","description":"Bacon - lettuce - tomato between 2 slices of toast","price":850},
-      {"id":"0403A","catid":"04","name":"Club house sandwich","description":"A triple decker sandwich, mayo, chicken, ham, bacon, lettuce, and tomato","price":1000},
-      {"id":"0404A","catid":"04","name":"Hot beef sandwich","description":"Sliced roast beef, sauteed onion, gravy on a slice of bread","price":925},
-      {"id":"0405A","catid":"04","name":"Hot turkey sandwich","description":"Sliced roast turkey, sauteed onion, gravy on a slice of bread","price":1100},
-      {"id":"0406A","catid":"04","name":"Hot homemade hamburger sandwich","description":"Sautéed onions, gravy on a slice of bread","price":875},
-      {"id":"0407A","catid":"04","name":"Hot veal cutlet sandwich","description":"Tender breaded veal, gravy on a slice of bread","price":1000},
-      {"id":"0408A","catid":"04","name":"Grilled cheese sandwich","description":"Grilled cheese (cheddar)","price":775},
-      {"id":"0408B","catid":"04","name":"Grilled ham & cheese sandwich","description":"Add 2 slices of ham","price":925},
-      {"id":"0408C","catid":"04","name":"Grilled cheese & bacon sandwhich","description":"Add 3 strips of bacon","price":925},
-      {"id":"0501A","catid":"05","name":"Basic burger","description":"Homemade hamburger with sauteed onion (beef - no topping)","price":850},
-      {"id":"0501B","catid":"05","name":"Delux burger","description":"Topping: cheese (1) bacon (1)","price":975},
-      {"id":"0501C","catid":"05","name":"Nellie burger","description":"Topping: cheese (1) ham (1)","price":975},
-      {"id":"0501D","catid":"05","name":"Cheese burger","description":"Topping: cheese (2)","price":975},
-      {"id":"0501E","catid":"05","name":"Mushroom burger","description":"Topping: sauteed mushroom, cheese (1)","price":975},
-      {"id":"0502A","catid":"05","name":"Homemade chicken burger with cheese","description":"","price":975},
-      {"id":"050XX","catid":"05","name":"Extra to burger","description":"Add to burger","price":0},
-      {"id":"0601A","catid":"06","name":"Vietnamese spring rolls (4)","description":"","price":675},
-      {"id":"0601B","catid":"06","name":"Vietnamese spring rolls (2)","description":"","price":375},
-      {"id":"0602A","catid":"06","name":"Vegetarian Vietnamese spring rolls (4)","description":"","price":675},
-      {"id":"0602B","catid":"06","name":"Vegetarian Vietnamese spring rolls (2)","description":"","price":375},
-      {"id":"0603A","catid":"06","name":"Noodle bowl, grilled pork","description":"Spring roll (2), vermicelli, lettuce, cucumber, carrot pickle, green onion, roasted peanut, fish sauce","price":875},
-      {"id":"0603B","catid":"06","name":"Noodle bowl, chicken","description":"","price":900},
-      {"id":"0603C","catid":"06","name":"Noodle bowl, beef","description":"","price":900},
-      {"id":"0603D","catid":"06","name":"Noodle bowl, shrimp","description":"","price":900},
-      {"id":"0603E","catid":"06","name":"Noodle bowl, vegetarian","description":"tofu and mushroom","price":900},
-      {"id":"0604A","catid":"06","name":"House special noodle bowl","description":"Loaded with 2 spring rolls, BBQ pork, BBQ chicken, 1 shrimp","price":1025},
-      {"id":"0605A","catid":"06","name":"Salad rolls (4), pork","description":"","price":875},
-      {"id":"0605B","catid":"06","name":"Salad rolls (4), chicken","description":"","price":875},
-      {"id":"0605C","catid":"06","name":"Salad rolls (4), beef","description":"","price":875},
-      {"id":"0605D","catid":"06","name":"Salad rolls (4), shrimp","description":"","price":875},
-      {"id":"0605E","catid":"06","name":"Salad rolls (4), tofu and mushroom","description":"","price":875},
-      {"id":"0606A","catid":"06","name":"Salad rolls (2), pork","description":"","price":500},
-      {"id":"0606B","catid":"06","name":"Salad rolls (2), chicken","description":"","price":500},
-      {"id":"0606C","catid":"06","name":"Salad rolls (2), beef","description":"","price":500},
-      {"id":"0606D","catid":"06","name":"Salad rolls (2), shrimp","description":"","price":500},
-      {"id":"0606E","catid":"06","name":"Salad rolls (2), tofu and mushroom","description":"","price":500},
-      {"id":"0701A","catid":"07","name":"Chicken Fingers","description":"Served with fries, plum sauce","price":825},
-      {"id":"0702A","catid":"07","name":"Fish and Chip (1 pc)","description":"Served with fries, lemon, tartar sauce","price":800},
-      {"id":"0702B","catid":"07","name":"Fish and Chip (2 pcs)","description":"Served with fries, lemon, tartar sauce","price":1150},
-      {"id":"0703A","catid":"07","name":"Veal cutlet (2 pcs)","description":"Tender breaded veal (2), served with mashed potato, corn, carrot, and gravy","price":1000},
-      {"id":"0703B","catid":"07","name":"Veal cutlet (3 pcs)","description":"Tender breaded veal (3), served with mashed potato, corn, carrot, and gravy","price":1425},
-      {"id":"0704A","catid":"07","name":"Pork cutlet (2 pcs)","description":"Tender breaded pork (2), served with mashed potato, corn, carrot, and gravy","price":1000},
-      {"id":"0704B","catid":"07","name":"Pork cutlet (3 pcs)","description":"Tender breaded pork (3), served with mashed potato, corn, carrot, and gravy","price":1425},
-      {"id":"0705A","catid":"07","name":"Liver and Onion","description":"Topped with sautéed onions and bacon, served with mashed potato,  corn, carrot, and gravy","price":1250},
-      {"id":"0706A","catid":"07","name":"Chicken Rebecca","description":"Chicken breast smothered with mushrooms and onions, served with mashed potato, corn, carrot, and gravy","price":950},
-      {"id":"0707A","catid":"07","name":"Greek chicken","description":"Seasoned chicken breast topped with melted cheese and lemon juice, served with mashed potato, corn, carrot, and gravy","price":950},
-      {"id":"0708A","catid":"07","name":"Homemade perogies (potato, cheddar) (6)","description":"Perogies grilled with butter, topped with sautéed onion and bacon, served with sour cream","price":700},
-      {"id":"0708B","catid":"07","name":"Homemade perogies (6) and smokie (1)","description":"","price":925},
-      {"id":"0708C","catid":"07","name":"Homemade perogies (6) and cabbage roll (1)","description":"","price":975},
-      {"id":"0708D","catid":"07","name":"Ukrainian platter","description":" Perogies (6), cabbage roll (1), smokie (1)","price":1100},
-      {"id":"0709A","catid":"07","name":"Homemade cabbage rolls - rice & ground beef (2)","description":"","price":625},
-      {"id":"0710A","catid":"07","name":"Hot homemade hamburger steak","description":"Served with mashed potato, corn, carrot, and gravy","price":875},
-      {"id":"0711A","catid":"07","name":"Roasted turkey","description":"Sauteed onion, stuffing, cranberry sauce, mashed potato, corn, carrot, and gravy","price":1200},
-      {"id":"0801A","catid":"08","name":"Lemon meringue pie","description":"","price":425},
-      {"id":"0802A","catid":"08","name":"Banana cream pie","description":"","price":425},
-      {"id":"0802B","catid":"08","name":"Chocolate cream pie","description":"","price":425},
-      {"id":"0802C","catid":"08","name":"Coconut cream pie","description":"","price":425},
-      {"id":"0803A","catid":"08","name":"Apple pie","description":"","price":500},
-      {"id":"0803X","catid":"08","name":"Add to pie","description":"Ice cream or cheese","price":125},
-      {"id":"0901A","catid":"09","name":"Coffee","description":"","price":175},
-      {"id":"0901B","catid":"09","name":"Decaf coffee","description":"","price":175},
-      {"id":"0902A","catid":"09","name":"Red Rose tea (black)","description":"","price":175},
-      {"id":"0902B","catid":"09","name":"Green tea (Lipton)","description":"","price":175},
-      {"id":"0903A","catid":"09","name":"Peppermint tea","description":"","price":200},
-      {"id":"0903B","catid":"09","name":"Earl Grey tea","description":"","price":200},
-      {"id":"0903C","catid":"09","name":"Lemon tea","description":"","price":200},
-      {"id":"0903D","catid":"09","name":"Jasmine tea","description":"","price":200},
-      {"id":"0903E","catid":"09","name":"Chai Spice tea","description":"","price":200},
-      {"id":"0903F","catid":"09","name":"English breakfast tea","description":"","price":200},
-      {"id":"0903G","catid":"09","name":"Cranberry tea","description":"","price":200},
-      {"id":"0903H","catid":"09","name":"Cranberry-apple tea","description":"","price":200},
-      {"id":"0903I","catid":"09","name":"Mulled-apple tea","description":"","price":200},
-      {"id":"0903J","catid":"09","name":"Ginger Peach tea","description":"","price":200},
-      {"id":"0903K","catid":"09","name":"Raspberry tea","description":"","price":200},
-      {"id":"0903L","catid":"09","name":"Chamomile tea","description":"","price":200},
-      {"id":"0904A","catid":"09","name":"Coke","description":"","price":200},
-      {"id":"0904B","catid":"09","name":"Diet coke","description":"","price":200},
-      {"id":"0904C","catid":"09","name":"Pepsi","description":"","price":200},
-      {"id":"0904D","catid":"09","name":"Diet pepsi","description":"","price":200},
-      {"id":"0904E","catid":"09","name":"Iced tea","description":"","price":200},
-      {"id":"0904F","catid":"09","name":"Gingerale","description":"","price":200},
-      {"id":"0904G","catid":"09","name":"Diet Gingerale","description":"","price":200},
-      {"id":"0904H","catid":"09","name":"Sprite","description":"","price":200},
-      {"id":"0904I","catid":"09","name":"Mountain dew","description":"","price":200},
-      {"id":"0904J","catid":"09","name":"Orange crush","description":"","price":200},
-      {"id":"0904K","catid":"09","name":"Root beer","description":"","price":200},
-      {"id":"0904L","catid":"09","name":"Diet root beer","description":"","price":200},
-      {"id":"0904M","catid":"09","name":"Cream soda","description":"","price":200},
-      {"id":"0904N","catid":"09","name":"Grape crush","description":"","price":200},
-      {"id":"0904O","catid":"09","name":"7 Up","description":"","price":200},
-      {"id":"0904P","catid":"09","name":"Diet 7up","description":"","price":200},
-      {"id":"0904Q","catid":"09","name":"Dr Pepper","description":"","price":200},
-      {"id":"0904R","catid":"09","name":"Diet Dr Pepper","description":"","price":200},
-      {"id":"0905A","catid":"09","name":"Tomato juice","description":"","price":275},
-      {"id":"0906A","catid":"09","name":"V8","description":"","price":275},
-      {"id":"0907A","catid":"09","name":"Perrier (500ml bottle)","description":"","price":300},
-      {"id":"0908A","catid":"09","name":"Hot chocolate","description":"","price":300},
-      {"id":"0909A","catid":"09","name":"Bottled water","description":"","price":150},
-      {"id":"0910A","catid":"09","name":"Vietnamese iced coffee","description":"","price":375},
-      {"id":"0911A","catid":"09","name":"Bubble tea Tarot","description":"","price":475},
-      {"id":"0911B","catid":"09","name":"Bubble tea  Mango","description":"","price":475},
-      {"id":"0911C","catid":"09","name":"Bubble tea Strawberry","description":"","price":475},
-      {"id":"0911D","catid":"09","name":"Bubble tea Litchi","description":"","price":475},
-      {"id":"0911E","catid":"09","name":"Bubble tea Honeydew","description":"","price":475},
-      {"id":"0911F","catid":"09","name":"Bubble tea Watermelon","description":"","price":475},
-      {"id":"1001A","catid":"10","name":"BBQ Pork","description":"","price":500},
-      {"id":"1001B","catid":"10","name":"Jerk Pork","description":"","price":500},
-      {"id":"1002A","catid":"10","name":"Satay chicken","description":"","price":600},
-      {"id":"1002B","catid":"10","name":"Jerk chicken","description":"","price":600},
-      {"id":"1003A","catid":"10","name":"Satay beef","description":"","price":600},
-      {"id":"1003B","catid":"10","name":"Jerk beef","description":"","price":600},
-      {"id":"1004A","catid":"10","name":"Tofu","description":"","price":600}
-]
+code	tag	name	description	basePrice	imageUrl
+0101A	1	Traditional breakfast	"Meat (bacon (3) or ham (2) or sausage (1)), egg (2), toast (2), jam (2) and hashbrown"	675	./images/dishes/0101A.jpg
+0101B	1	Hungry man breakfast	"Meat (bacon (3) or ham (2) or sausage (1)), egg (3), toast (2), jam (2), pancake (3) and hashbrown"	975	./images/dishes/0101B.jpg
+0101C	1	Nellie breakfast	"Homemade hamburger steak with sauteed onion, egg (3), toast (2), jam (2) and hashbrown"	975	./images/dishes/0101C.jpg
+0102A	1	Five pancakes	Served with maple syrup and butter	650	./images/dishes/0102A.jpg
+0102B	1	Three pancakes	Served with maple syrup and butter	425	./images/dishes/0102B.jpg
+0102C	1	Three pancakes with meat	Served with maple syrup and butter and meat (ham or bacon or sausage)	650	./images/dishes/0102C.jpg
+0102D	1	Three pancakes with egg	Served with maple syrup and butter and 2 egg	650	./images/dishes/0102D.jpg
+0103A	1	Ham cheese omelette	"2-egged omelette, ham (1), cheese (1), toast (2), jam (2) and hashbrown"	850	./images/dishes/0103A.jpg
+0103B	1	Vegetarian omelette (no cheese)	"Celery, onion, mushroom, green onion, toast (2) and jam (2), hashbrown"	850	./images/dishes/0103B.jpg
+0103C	1	Vegetarian omelettette with cheese	"Celery, onion, mushroom, green onion, cheddar cheese (1), toast (2) and jam (2), hashbrown"	950	./images/dishes/0103C.jpg
+0103D	1	Western omelette (no cheese)	"Ham, celery, onion, mushroom, green onion, toast (2), jam (2) and hashbrown"	850	./images/dishes/0103D.jpg
+0103E	1	Western omelette with cheese	"Ham, celery, onion, mushroom, green onion, cheddar cheese (1), toast (2), jam (2) and hashbrown"	950	./images/dishes/0103E.jpg
+0104A	1	Hot oatmeal	Served with milk and brown sugar	525	./images/dishes/0104A.jpg
+0104X	1	Extra bread to oatmeal	Add to hot oatmeal	125	./images/dishes/0104X.jpg
+0105A	1	Breakie in a bun	Bacon (1) and scrambled egg (1)	500	./images/dishes/0105A.jpg
+0105B	1	Breakie in a bun w/ cheese	Add cheddar cheese (1)	600	./images/dishes/0105B.jpg
+0201A	2	Tossed Salad	"Iceberg lettuce, cucumber, carrot, celery and bread"	575	./images/dishes/0201A.jpg
+0201B	2	Small tossed salad	No bread	425	./images/dishes/0201B.jpg
+0202A	2	Caesar salad	"Romaine lettuce, Parmesan cheese, crouton, Caesar dressing and bread"	575	./images/dishes/0202A.jpg
+0202B	2	Small Caesar	No bread	425	./images/dishes/0202B.jpg
+0203A	2	Oriental salad	"Iceberg lettuce, cucumber, carrot pickle, vermicelli, fish sauce, choice of meat"	775	./images/dishes/0203A.jpg
+0203B	2	Vegetarian oriental salad	"Iceberg lettuce, cucumber, carrot pickle, vermicelli, tofu, mushroom, soya sauce"	775	./images/dishes/0203B.jpg
+0204A	2	Cabbage borscht	"Cabbage, onion, tomato juice, potato, celery, butter"	425	./images/dishes/0204A.jpg
+0204B	2	Beet borscht	"Beet, potato, cabbage, onion, chicken broth"	425	./images/dishes/0204B.jpg
+0204C	2	Wonton soup	xx	425	./images/dishes/0204C.jpg
+0204X	2	Extra bread to soup	xx	125	./images/dishes/0204X.jpg
+0205A	2	Daily soup	xx	425	./images/dishes/0205A.jpg
+0205B	2	Daily soup w/bread	xx	525	./images/dishes/0205B.jpg
+0207A	2	Fries	Home cut fries	450	./images/dishes/0207A.jpg
+0207B	2	Fries w gravy	Add gravy	550	./images/dishes/0207B.jpg
+0207C	2	Poutine	Add cheese and gravy to fries	650	./images/dishes/0207C.jpg
+0208A	2	Small fries	"Home cut fries, small size"	325	./images/dishes/0208A.jpg
+0208B	2	Small fries w gravy	Add gravy	425	./images/dishes/0208B.jpg
+0208C	2	Small poutine	Add cheese and gravy to samll fries	525	./images/dishes/0208C.jpg
+0209A	2	Fried wonton (6)		425	./images/dishes/0209A.jpg
+0301A	3	Egg salad sandwich	"Hard boiled egg, diced celery, green onion, mayo, salt and pepper"	550	./images/dishes/0301A.jpg
+0302A	3	Salmon salad sandwich	"Pink salmon, diced celery, green onions, mayo, salt and pepper"	550	./images/dishes/0302A.jpg
+0303A	3	Chicken salad sandwich	"Diced chicken, celery, green onions, mayo, salt and pepper"	550	./images/dishes/0303A.jpg
+0304A	3	Ham and cheese sandwich	"Sliced ham, cheese and mayo"	550	./images/dishes/0304A.jpg
+0401A	4	Denver sandwich	"Egg, ham, cheese, green onions, celery and mayo between 2 slices of toast"	875	./images/dishes/0401A.jpg
+0402A	4	BLT	Bacon - lettuce - tomato between 2 slices of toast	850	./images/dishes/0402A.jpg
+0403A	4	Club house sandwich	"A triple decker sandwich, mayo, chicken, ham, bacon, lettuce, and tomato"	1000	./images/dishes/0403A.jpg
+0404A	4	Hot beef sandwich	"Sliced roast beef, sauteed onion, gravy on a slice of bread"	925	./images/dishes/0404A.jpg
+0405A	4	Hot turkey sandwich	"Sliced roast turkey, sauteed onion, gravy on a slice of bread"	1100	./images/dishes/0405A.jpg
+0406A	4	Hot homemade hamburger sandwich	"Sautéed onions, gravy on a slice of bread"	875	./images/dishes/0406A.jpg
+0407A	4	Hot veal cutlet sandwich	"Tender breaded veal, gravy on a slice of bread"	1000	./images/dishes/0407A.jpg
+0408A	4	Grilled cheese sandwich	Grilled cheese (cheddar)	775	./images/dishes/0408A.jpg
+0408B	4	Grilled ham & cheese sandwich	Add 2 slices of ham	925	./images/dishes/0408B.jpg
+0408C	4	Grilled cheese & bacon sandwhich	Add 3 strips of bacon	925	./images/dishes/0408C.jpg
+0501A	5	Basic burger	Homemade hamburger with sauteed onion (beef - no topping)	850	./images/dishes/0501A.jpg
+0501B	5	Delux burger	Topping: cheese (1) bacon (1)	975	./images/dishes/0501B.jpg
+0501C	5	Nellie burger	Topping: cheese (1) ham (1)	975	./images/dishes/0501C.jpg
+0501D	5	Cheese burger	Topping: cheese (2)	975	./images/dishes/0501D.jpg
+0501E	5	Mushroom burger	"Topping: sauteed mushroom, cheese (1)"	975	./images/dishes/0501E.jpg
+0502A	5	Homemade chicken burger with cheese		975	./images/dishes/0502A.jpg
+050XX	5	Extra to burger	Add to burger	0	./images/dishes/050XX.jpg
+0601A	6	Vietnamese spring rolls (4)		675	./images/dishes/0601A.jpg
+0601B	6	Vietnamese spring rolls (2)		375	./images/dishes/0601B.jpg
+0602A	6	Vegetarian Vietnamese spring rolls (4)		675	./images/dishes/0602A.jpg
+0602B	6	Vegetarian Vietnamese spring rolls (2)		375	./images/dishes/0602B.jpg
+0603A	6	"Noodle bowl, grilled pork"	"Spring roll (2), vermicelli, lettuce, cucumber, carrot pickle, green onion, roasted peanut, fish sauce"	875	./images/dishes/0603A.jpg
+0603B	6	"Noodle bowl, chicken"		900	./images/dishes/0603B.jpg
+0603C	6	"Noodle bowl, beef"		900	./images/dishes/0603C.jpg
+0603D	6	"Noodle bowl, shrimp"		900	./images/dishes/0603D.jpg
+0603E	6	"Noodle bowl, vegetarian"	tofu and mushroom	900	./images/dishes/0603E.jpg
+0604A	6	House special noodle bowl	"Loaded with 2 spring rolls, BBQ pork, BBQ chicken, 1 shrimp"	1025	./images/dishes/0604A.jpg
+0605A	6	"Salad rolls (4), pork"		875	./images/dishes/0605A.jpg
+0605B	6	"Salad rolls (4), chicken"		875	./images/dishes/0605B.jpg
+0605C	6	"Salad rolls (4), beef"		875	./images/dishes/0605C.jpg
+0605D	6	"Salad rolls (4), shrimp"		875	./images/dishes/0605D.jpg
+0605E	6	"Salad rolls (4), tofu and mushroom"		875	./images/dishes/0605E.jpg
+0606A	6	"Salad rolls (2), pork"		500	./images/dishes/0606A.jpg
+0606B	6	"Salad rolls (2), chicken"		500	./images/dishes/0606B.jpg
+0606C	6	"Salad rolls (2), beef"		500	./images/dishes/0606C.jpg
+0606D	6	"Salad rolls (2), shrimp"		500	./images/dishes/0606D.jpg
+0606E	6	"Salad rolls (2), tofu and mushroom"		500	./images/dishes/0606E.jpg
+0701A	7	Chicken Fingers	"Served with fries, plum sauce"	825	./images/dishes/0701A.jpg
+0702A	7	Fish and Chip (1 pc)	"Served with fries, lemon, tartar sauce"	800	./images/dishes/0702A.jpg
+0702B	7	Fish and Chip (2 pcs)	"Served with fries, lemon, tartar sauce"	1150	./images/dishes/0702B.jpg
+0703A	7	Veal cutlet (2 pcs)	"Tender breaded veal (2), served with mashed potato, corn, carrot, and gravy"	1000	./images/dishes/0703A.jpg
+0703B	7	Veal cutlet (3 pcs)	"Tender breaded veal (3), served with mashed potato, corn, carrot, and gravy"	1425	./images/dishes/0703B.jpg
+0704A	7	Pork cutlet (2 pcs)	"Tender breaded pork (2), served with mashed potato, corn, carrot, and gravy"	1000	./images/dishes/0704A.jpg
+0704B	7	Pork cutlet (3 pcs)	"Tender breaded pork (3), served with mashed potato, corn, carrot, and gravy"	1425	./images/dishes/0704B.jpg
+0705A	7	Liver and Onion	"Topped with sautéed onions and bacon, served with mashed potato,  corn, carrot, and gravy"	1250	./images/dishes/0705A.jpg
+0706A	7	Chicken Rebecca	"Chicken breast smothered with mushrooms and onions, served with mashed potato, corn, carrot, and gravy"	950	./images/dishes/0706A.jpg
+0707A	7	Greek chicken	"Seasoned chicken breast topped with melted cheese and lemon juice, served with mashed potato, corn, carrot, and gravy"	950	./images/dishes/0707A.jpg
+0708A	7	"Homemade perogies (potato, cheddar) (6)"	"Perogies grilled with butter, topped with sautéed onion and bacon, served with sour cream"	700	./images/dishes/0708A.jpg
+0708B	7	Homemade perogies (6) and smokie (1)		925	./images/dishes/0708B.jpg
+0708C	7	Homemade perogies (6) and cabbage roll (1)		975	./images/dishes/0708C.jpg
+0708D	7	Ukrainian platter	" Perogies (6), cabbage roll (1), smokie (1)"	1100	./images/dishes/0708D.jpg
+0709A	7	Homemade cabbage rolls - rice & ground beef (2)		625	./images/dishes/0709A.jpg
+0710A	7	Hot homemade hamburger steak	"Served with mashed potato, corn, carrot, and gravy"	875	./images/dishes/0710A.jpg
+0711A	7	Roasted turkey	"Sauteed onion, stuffing, cranberry sauce, mashed potato, corn, carrot, and gravy"	1200	./images/dishes/0711A.jpg
+0801A	8	Lemon meringue pie		425	./images/dishes/0801A.jpg
+0802A	8	Banana cream pie		425	./images/dishes/0802A.jpg
+0802B	8	Chocolate cream pie		425	./images/dishes/0802B.jpg
+0802C	8	Coconut cream pie		425	./images/dishes/0802C.jpg
+0803A	8	Apple pie		500	./images/dishes/0803A.jpg
+0803X	8	Add to pie	Ice cream or cheese	125	./images/dishes/0803X.jpg
+0901A	9	Coffee		175	./images/dishes/0901A.jpg
+0901B	9	Decaf coffee		175	./images/dishes/0901B.jpg
+0902A	9	Red Rose tea (black)		175	./images/dishes/0902A.jpg
+0902B	9	Green tea (Lipton)		175	./images/dishes/0902B.jpg
+0903A	9	Peppermint tea		200	./images/dishes/0903A.jpg
+0903B	9	Earl Grey tea		200	./images/dishes/0903B.jpg
+0903C	9	Lemon tea		200	./images/dishes/0903C.jpg
+0903D	9	Jasmine tea		200	./images/dishes/0903D.jpg
+0903E	9	Chai Spice tea		200	./images/dishes/0903E.jpg
+0903F	9	English breakfast tea		200	./images/dishes/0903F.jpg
+0903G	9	Cranberry tea		200	./images/dishes/0903G.jpg
+0903H	9	Cranberry-apple tea		200	./images/dishes/0903H.jpg
+0903I	9	Mulled-apple tea		200	./images/dishes/0903I.jpg
+0903J	9	Ginger Peach tea		200	./images/dishes/0903J.jpg
+0903K	9	Raspberry tea		200	./images/dishes/0903K.jpg
+0903L	9	Chamomile tea		200	./images/dishes/0903L.jpg
+0904A	9	Coke		200	./images/dishes/0904A.jpg
+0904B	9	Diet coke		200	./images/dishes/0904B.jpg
+0904C	9	Pepsi		200	./images/dishes/0904C.jpg
+0904D	9	Diet pepsi		200	./images/dishes/0904D.jpg
+0904E	9	Iced tea		200	./images/dishes/0904E.jpg
+0904F	9	Gingerale		200	./images/dishes/0904F.jpg
+0904G	9	Diet Gingerale		200	./images/dishes/0904G.jpg
+0904H	9	Sprite		200	./images/dishes/0904H.jpg
+0904I	9	Mountain dew		200	./images/dishes/0904I.jpg
+0904J	9	Orange crush		200	./images/dishes/0904J.jpg
+0904K	9	Root beer		200	./images/dishes/0904K.jpg
+0904L	9	Diet root beer		200	./images/dishes/0904L.jpg
+0904M	9	Cream soda		200	./images/dishes/0904M.jpg
+0904N	9	Grape crush		200	./images/dishes/0904N.jpg
+0904O	9	7 Up		200	./images/dishes/0904O.jpg
+0904P	9	Diet 7up		200	./images/dishes/0904P.jpg
+0904Q	9	Dr Pepper		200	./images/dishes/0904Q.jpg
+0904R	9	Diet Dr Pepper		200	./images/dishes/0904R.jpg
+0905A	9	Tomato juice		275	./images/dishes/0905A.jpg
+0906A	9	V8		275	./images/dishes/0906A.jpg
+0907A	9	Perrier (500ml bottle)		300	./images/dishes/0907A.jpg
+0908A	9	Hot chocolate		300	./images/dishes/0908A.jpg
+0909A	9	Bottled water		150	./images/dishes/0909A.jpg
+0910A	9	Vietnamese iced coffee		375	./images/dishes/0910A.jpg
+0911A	9	Bubble tea Tarot		475	./images/dishes/0911A.jpg
+0911B	9	Bubble tea  Mango		475	./images/dishes/0911B.jpg
+0911C	9	Bubble tea Strawberry		475	./images/dishes/0911C.jpg
+0911D	9	Bubble tea Litchi		475	./images/dishes/0911D.jpg
+0911E	9	Bubble tea Honeydew		475	./images/dishes/0911E.jpg
+0911F	9	Bubble tea Watermelon		475	./images/dishes/0911F.jpg
+1001A	10	BBQ Pork		500	./images/dishes/1001A.jpg
+1001B	10	Jerk Pork		500	./images/dishes/1001B.jpg
+1002A	10	Satay chicken		600	./images/dishes/1002A.jpg
+1002B	10	Jerk chicken		600	./images/dishes/1002B.jpg
+1003A	10	Satay beef		600	./images/dishes/1003A.jpg
+1003B	10	Jerk beef		600	./images/dishes/1003B.jpg
+1004A	10	Tofu		600	./images/dishes/1004A.jpg
