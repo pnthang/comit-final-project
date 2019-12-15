@@ -10,7 +10,7 @@
   {
     "button": "Order",
     "description": "Served with maple syrup and butter",
-    "image": "./images/background/5.jpg",
+    "image": "/images/background/5.jpg",
     "title": "Five pancakes",
     "user": "Order Dish",
     "userProfile": "/images/dish.png"
@@ -18,7 +18,7 @@
   {
     "button": "Order",
     "description": "2-egged omelette, ham (1), cheese (1), toast (2), jam (2) and hashbrown",
-    "image": "./images/background/5.jpg",
+    "image": "/images/background/5.jpg",
     "title": "Ham cheese omelette",
     "user": "Order Dish",
     "userProfile": "/images/dish.png"
