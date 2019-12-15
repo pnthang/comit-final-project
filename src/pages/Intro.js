@@ -12,12 +12,14 @@ class Intro extends Component {
     slides: null,
     loading: false
   };
+
   componentDidMount() {
     this.setState({
       loading: true
     });
+    const baseUrl = '/comit-final-project';
     axios
-      .get("/comit-final-project/data/slides.json")
+      .get(`${baseUrl}/data/slides.json`)
       .then(res => {
         this.setState({
           slides: res.data,
@@ -27,6 +29,7 @@ class Intro extends Component {
       .catch(err => console.log(err));
   }
   render() {
+    const baseUrl = '/comit-final-project';
     let { slides, loading } = this.state;
     return loading ? (
       <div>Loading...</div>
@@ -38,7 +41,7 @@ class Intro extends Component {
               key={index}
               className="slider-content"
               style={{
-                background: `url('${item.image}') no-repeat center center`
+                background: `url('${baseUrl}/${item.image}') no-repeat center center`
               }}
             >
               <div className="inner">
@@ -47,7 +50,7 @@ class Intro extends Component {
                 <button className="slidebutton" >{item.button}</button>
               </div>
               <section>
-                <img src={item.userProfile} alt={item.user} />
+                <img src={`${baseUrl}${item.userProfile}`} alt={item.user} />
                 <span>
                   Order:<strong>{item.user}</strong>
                 </span>

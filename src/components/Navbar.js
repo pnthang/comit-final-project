@@ -11,8 +11,11 @@ import PropTypes from "prop-types";
 // Redux stuff
 import { connect } from "react-redux";
 import { openMCart } from "../redux/actions/dataActions";
+
 class Navbar extends Component {
+
   render() {
+    const baseUrl = '/comit-final-project';
     const {
       data: { cart }
     } = this.props;
@@ -22,7 +25,7 @@ class Navbar extends Component {
           <Button
             color="inherit"
             component={Link}
-            to="/"
+            to={`${baseUrl}/`}
             className="nav-button"
           >
             Home
@@ -30,7 +33,7 @@ class Navbar extends Component {
           <Button
             color="inherit"
             component={Link}
-            to="/order"
+            to={`${baseUrl}/order`}
             className="nav-button"
           >
             ORDER

@@ -37,12 +37,14 @@ if(token){
 
 
 class App extends Component{
+
     render(){
+        const baseUrl = '/comit-final-project';
         return (
             <MuiThemeProvider theme={theme}>
                 <Provider store={store}>
                 <div className="App">
-                    <Router basename="/comit-final-project" />
+                    <Router basename={baseUrl} />
                     <Router>
                         <Navbar/>
                         <div className="container">

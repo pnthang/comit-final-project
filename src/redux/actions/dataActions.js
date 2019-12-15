@@ -12,10 +12,11 @@ import axios from "axios";
 // Dishes
 
 export function fetchData() {
+    const baseUrl = '/comit-final-project';
     return dispatch => {
       dispatch(fetchDataBegin());
       return axios
-        .get("/comit-final-project/data/dishes.json")
+        .get(`${baseUrl}/data/dishes.json`)
        // .then(handleErrors)
         .then(res => {
             console.log(res.data);
