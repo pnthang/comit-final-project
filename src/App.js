@@ -15,10 +15,10 @@ import Navbar from './components/Navbar';
 import NavbarBottom from './components/NavbarBottom';
 import AuthRoute from './util/AuthRoute.js';
 // pages
-import Intro from './pages/Intro';
 import Home from './pages/Home';
+import Order from './pages/Order';
 import Login from './pages/Login';
-import Admin from './pages/Admin';
+import About from './pages/About';
 
 // theme color
 const theme = createMuiTheme(themeFile);
@@ -44,15 +44,16 @@ class App extends Component{
             <MuiThemeProvider theme={theme}>
                 <Provider store={store}>
                 <div className="App">
-                    <Router basename="/comit-final-project" />
+                    {/* <Router basename="/comit-final-project" /> */}
+                    <Router  />
                     <Router>
                         <Navbar/>
                         <div className="container">
                             <Switch>
-                                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Intro}/>
-                                <Route exact path={`${process.env.PUBLIC_URL}/order`} component={Home}/>
+                                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home}/>
+                                <Route exact path={`${process.env.PUBLIC_URL}/order`} component={Order}/>
                                 <AuthRoute exact path={`${process.env.PUBLIC_URL}/login`} component={Login} />
-                                <AuthRoute exact path={`${process.env.PUBLIC_URL}/admin`} component={Admin} authenticated/>
+                                <AuthRoute exact path={`${process.env.PUBLIC_URL}/about`} component={About} />
                             </Switch>
                         </div>
                         <NavbarBottom />

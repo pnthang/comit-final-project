@@ -10,12 +10,10 @@ export const CLEAR_ERRORS = 'CLEAR_ERRORS';
 
 
 //Data reducer types
-export const FETCH_DATA_BEGIN = 'FETCH_DATA_BEGIN';
+export const FETCH_BEGIN = 'FETCH_BEGIN';
+export const FETCH_FAILURE = 'FETCH_FAILURE';
 export const FETCH_DATA_SUCCESS = 'FETCH_DATA_SUCCESS';
-export const FETCH_DATA_FAILURE = 'FETCH_DATA_FAILURE';
+export const FETCH_SLIDE_SUCCESS = 'FETCH_SLIDE_SUCCESS';
 export const UPDATE_CART = 'UPDATE_CART';
 export const OPEN_MCART = 'OPEN_MCART';
 export const CLOSE_MCART = 'CLOSE_MCART';
-
-export const SET_FAVORITE = 'SET_FAVORITE';
-export const SET_UNFAVORITE = 'SET_UNFAVORITE';

@@ -1,75 +1,72 @@
 import React, { Component } from "react";
-import Grid from "@material-ui/core/Grid";
-
-import SearchInput from "../components/SearchInput";
-import Drawer from '@material-ui/core/Drawer'
 import PropTypes from "prop-types";
-// Order dishes component
-import DishCardComplex from "../components/DishCardComplex";
-import MCart from "../components/MCart";
 // Redux stuff
 import { connect } from "react-redux";
-import { fetchData,openMCart,closeMCart } from "../redux/actions/dataActions";
+import { fetchSlide } from "../redux/actions/dataActions";
+import Slider from "react-animated-slider";
+import "react-animated-slider/build/horizontal.css";
+import "normalize.css/normalize.css";
+import "../css/slider-animations.css";
+import "../css/styles.css";
 
 class Home extends Component {
-  state={
-    open:true
-  }
   componentDidMount() {
-    this.props.dispatch(fetchData());
-    // console.log(this.props)
+    this.props.dispatch(fetchSlide());
   }
-  closeMCartPanel=()=>{
-    this.props.dispatch(closeMCart());
-  }
+  handlClick = () => {
+    this.props.history.push(`${process.env.PUBLIC_URL}/order`);
+  };
   render() {
-    const { error, loading, dishes, mcart } = this.props;
-
-    if (error) {
-      return <div>Error! {error.message}</div>;
-    }
-
-    if (loading) {
-      return <div>Loading...</div>;
-    }
-
-    const recentDishesMarkup = dishes.map(dish => (
-        <DishCardComplex key={dish.code} dish={dish} />
-    ));
-
-    return (
-      <Grid container>
-        <Grid container justify="center">
-          <SearchInput />
-        </Grid>
-        <Grid container direction="row" justify="center" alignItems="flex-start">
-          {recentDishesMarkup}
-        </Grid>
-        <Drawer anchor="right" open={mcart} onClose={this.closeMCartPanel}>
-          <MCart/>
-        </Drawer>
-      </Grid>
+    const { loading, slides } = this.props;
+    return loading ? (
+      <div>Loading...</div>
+    ) : (
+      slides && (
+        <Slider autoplay={3000} className="slider-wrapper">
+          {slides.map((item, index) => (
+            <div
+              key={index}
+              className="slider-content"
+              style={{
+                background: `url('${process.env.PUBLIC_URL}${item.image}') no-repeat center center`
+              }}
+            >
+              <div className="inner">
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>
+                <button className="slidebutton" onClick={this.handlClick}>
+                  {item.button}
+                </button>
+              </div>
+              <section>
+                <img
+                  src={`${process.env.PUBLIC_URL}${item.userProfile}`}
+                  alt={item.user}
+                />
+                <span>
+                  Order:<strong>{item.user}</strong>
+                </span>
+              </section>
+            </div>
+          ))}
+        </Slider>
+      )
     );
   }
 }
 
 Home.propTypes = {
-  fetchData: PropTypes.func.isRequired,
-  openMCart: PropTypes.func.isRequired,
-  closeMCart: PropTypes.func.isRequired,
+  fetchSlide: PropTypes.func.isRequired,
   UI: PropTypes.object.isRequired
 };
 const mapStateToProps = state => ({
-  dishes: state.data.dishes,
+  slides: state.data.slides,
   loading: state.data.loading,
   error: state.data.error,
-  mcart:state.data.mcart,
   UI: state.UI
 });
 const mapActionsToProps = dispatch => ({
-    dispatch,
-    fetchData,
-    openMCart,
-    closeMCart
+  dispatch,
+  fetchSlide
 });
 export default connect(mapStateToProps, mapActionsToProps)(Home);

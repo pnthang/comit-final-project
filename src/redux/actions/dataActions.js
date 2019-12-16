@@ -1,41 +1,49 @@
 import {
-  FETCH_DATA_BEGIN,
+  FETCH_BEGIN,
+  FETCH_FAILURE,
   FETCH_DATA_SUCCESS,
-  FETCH_DATA_FAILURE,
+  FETCH_SLIDE_SUCCESS,
   UPDATE_CART,
   OPEN_MCART,
   CLOSE_MCART,
-  SET_FAVORITE,
-  SET_UNFAVORITE
 } from "../types";
 import axios from "axios";
 // Dishes
 
 export function fetchData() {
-    const baseUrl = '/comit-final-project';
+    // const baseUrl = '/comit-final-project';
+
     return dispatch => {
-      dispatch(fetchDataBegin());
+      dispatch(fetchBegin());
       return axios
-        .get(`${baseUrl}/data/dishes.json`)
-       // .then(handleErrors)
+        .get(`${process.env.PUBLIC_URL}/data/dishes.json`)
         .then(res => {
-            console.log(res.data);
           dispatch(fetchDataSuccess(res.data));
           return res.data;
         })
-        .catch(error => dispatch(fetchDataFailure(error)));
+        .catch(error => dispatch(fetchFailure(error)));
+    };
+  }
+  export function fetchSlide() {
+    return dispatch => {
+      dispatch(fetchBegin());
+      return axios
+        .get(`${process.env.PUBLIC_URL}/data/slides.json`)
+        .then(res => {
+          dispatch(fetchSlideSuccess(res.data));
+          return res.data;
+        })
+        .catch(error => dispatch(fetchFailure(error)));
     };
   }
 
-  // Handle HTTP errors since fetch won't.
-  function handleErrors(response) {
-    if (!response.ok) {
-      throw Error(response.statusText);
-    }
-    return response;
-  }
-export const fetchDataBegin = () => ({
-  type: FETCH_DATA_BEGIN
+export const fetchBegin = () => ({
+  type: FETCH_BEGIN
+});
+
+export const fetchFailure = error => ({
+  type: FETCH_FAILURE,
+  payload: { error }
 });
 
 export const fetchDataSuccess = data => ({
@@ -43,10 +51,11 @@ export const fetchDataSuccess = data => ({
   payload:  {data}
 });
 
-export const fetchDataFailure = error => ({
-  type: FETCH_DATA_FAILURE,
-  payload: { error }
+export const fetchSlideSuccess = data => ({
+  type: FETCH_SLIDE_SUCCESS,
+  payload:  {data}
 });
+
 export const updateCart = data => ({
   type: UPDATE_CART,
   payload:  {data}
@@ -58,18 +67,4 @@ export const closeMCart = () => ({
   type: CLOSE_MCART
 });
 
-// Favorite
-export const setFavorite = (code) =>(dispatch)=>{
-    //data.favorite = !data.favorite;
-    // console.log(data);
-    dispatch({
-      type: SET_FAVORITE,
-      payload: code
-    })
-};
 
-
-export const setUnFavorite = (data) => ({
-  type: SET_UNFAVORITE,
-  payload: data
-});

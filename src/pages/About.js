@@ -1,21 +1,26 @@
-import React from 'react'
-import {BrowserRouter, Link, Route} from 'react-router-dom'
-import AboutEvenMore from './AboutEvenMore'
+import React, { Component } from "react";
+import { Map, InfoWindow, GoogleApiWrapper, Marker } from "google-maps-react";
+import Grid from "@material-ui/core/Grid";
 
-function About(){
+export class About extends Component {
+  render() {
     return (
-        <BrowserRouter>
-        <div>
-            <h3>About page</h3>
-            <p>
-                Some short text about me ...
-                <Link to='/about/even-more'>Find out about my self</Link>
+      <Grid container spacing={1}>
+        <Grid container item xs={12} spacing={3}>
+          <h1>Order dishes</h1>
 
-            </p>
-            <Route path='/about/even-more' component={AboutEvenMore}/>
-        </div>
-        </BrowserRouter>
-    )
+        </Grid>
+        <Grid container item xs={12} spacing={6}>
+
+        </Grid>
+      </Grid>
+    );
+  }
 }
-
-export default About;
+const LoadingContainer = (props) => (
+  <div>Fancy loading container!</div>
+)
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyBcDD4_q7MpnrLQCB0FPgY1--baCbyFfuw",
+  LoadingContainer: LoadingContainer
+})(About);

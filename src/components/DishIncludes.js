@@ -5,7 +5,7 @@ function DishIncludes(props) {
   const { name, options } = props.include;
   const { includeId } = props;
 
-  const [value, setValue] = React.useState(null);
+  const [value, setValue] = React.useState('');
 
   const handleChange = event => {
     setValue(event.target.value);

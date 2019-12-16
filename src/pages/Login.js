@@ -3,7 +3,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from "@material-ui/core/Typography";
 
 import PropTypes from 'prop-types';
-import AppIcon from '../images/dish.png';
+//import AppIcon from '${process.env.PUBLIC_URL}/images/dish.png';
 //MUI
 import Grid from '@material-ui/core/Grid';
 import { TextField } from '@material-ui/core';
@@ -76,7 +76,7 @@ class Login extends Component {
             <Grid container className={classes.form}>
                 <Grid item sm/>
                 <Grid item sm>
-                    <img src={AppIcon} alt="Dish"  className={classes.image}/>
+                    <img src={`${process.env.PUBLIC_URL}/images/dish.png`} alt="Dish"  className={classes.image}/>
                     <form noValidate onSubmit={this.handleSubmit}>
                         <TextField
                             id="email"

@@ -7,6 +7,7 @@ import Badge from "@material-ui/core/Badge";
 import IconButton from "@material-ui/core/IconButton";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
+
 import PropTypes from "prop-types";
 // Redux stuff
 import { connect } from "react-redux";
@@ -42,13 +43,13 @@ class Navbar extends Component {
             onClick={() => this.props.dispatch(openMCart())}
           >
             <Badge badgeContent={cart.length} color="secondary">
-              <ShoppingCartIcon fontSize="large" />
+              <ShoppingCartIcon fontSize="large"  />
             </Badge>
           </IconButton>
           <Button
             color="inherit"
             component={Link}
-            to={`${process.env.PUBLIC_URL}/admin`}
+            to={`${process.env.PUBLIC_URL}/about`}
             className="nav-button"
           >
             About

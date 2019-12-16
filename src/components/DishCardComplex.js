@@ -78,7 +78,6 @@ class DishCardComplex extends Component {
     let index = newDishes.findIndex((d)=>d.code === currentCode);
     newDishes[index].favorite = newDishes[index].favorite=="1"?"0":"1";
     this.props.dispatch(fetchDataSuccess(newDishes));
-    console.log("here");
   };
   handleUpClick = () => {
     let currentCode = this.props.dish.code;
@@ -90,7 +89,7 @@ class DishCardComplex extends Component {
   };
   handleAddToCart = () => {
     let cart=this.props.data.cart.slice(0);
-    cart.push(this.props.dish);
+    cart.push(Object.assign({}, this.props.dish));
     this.props.dispatch(updateCart(cart));
 
     console.log(cart);
