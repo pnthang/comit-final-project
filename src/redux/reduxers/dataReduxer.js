@@ -1,16 +1,19 @@
 import {
   FETCH_BEGIN,
   FETCH_FAILURE,
+  FETCH_DATA_LOADED,
   FETCH_DATA_SUCCESS,
   FETCH_SLIDE_SUCCESS,
+  UPDATE_SEARCH,
   UPDATE_CART,
   CLOSE_MCART,
   OPEN_MCART
 } from "../types";
 
 const initialState = {
-  favorite: "0",
   loading: false,
+  searchText: "",
+  data: [],
   dishes: [],
   slides: [],
   cart: [],
@@ -33,6 +36,12 @@ export default function(state = initialState, action) {
         error: action.payload.error,
         dishes: []
       };
+    case FETCH_DATA_LOADED:
+      return {
+        ...state,
+        loading: false,
+        data: action.payload.data
+      };
     case FETCH_DATA_SUCCESS:
       return {
         ...state,
@@ -44,6 +53,11 @@ export default function(state = initialState, action) {
         ...state,
         loading: false,
         slides: action.payload.data
+      };
+    case UPDATE_SEARCH:
+      return {
+        ...state,
+        searchText: action.payload.data
       };
     case UPDATE_CART:
       return {

@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 import { openMCart, closeMCart } from "../redux/actions/dataActions";
 const styles = theme => ({
   list: {
-    width: 500
+    width: 300
   },
   fullList: {
     width: "auto"

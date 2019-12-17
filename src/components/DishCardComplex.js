@@ -85,7 +85,6 @@ class DishCardComplex extends Component {
     let index = newDishes.findIndex((d)=>d.code === currentCode);
     newDishes[index].number++;
     this.props.dispatch(fetchDataSuccess(newDishes));
-    console.log(newDishes[index].number);
   };
   handleAddToCart = () => {
     let cart=this.props.data.cart.slice(0);
