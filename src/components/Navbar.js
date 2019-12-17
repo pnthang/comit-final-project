@@ -12,9 +12,7 @@ import PropTypes from "prop-types";
 // Redux stuff
 import { connect } from "react-redux";
 import { openMCart } from "../redux/actions/dataActions";
-
 class Navbar extends Component {
-
   render() {
     const {
       data: { cart }
@@ -43,7 +41,7 @@ class Navbar extends Component {
             onClick={() => this.props.dispatch(openMCart())}
           >
             <Badge badgeContent={cart.length} color="secondary">
-              <ShoppingCartIcon fontSize="large"  />
+              <ShoppingCartIcon fontSize="large" />
             </Badge>
           </IconButton>
           <Button
@@ -81,4 +79,7 @@ const mapActionsToProps = dispatch => ({
   dispatch,
   openMCart
 });
-export default connect(mapStateToProps, mapActionsToProps)(Navbar);
+export default connect(
+  mapStateToProps,
+  mapActionsToProps
+)(Navbar);

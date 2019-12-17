@@ -15,6 +15,9 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import Button from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
+import Chip from "@material-ui/core/Chip";
+// notification
+import { withSnackbar } from "notistack";
 
 import DishIncludes from "./DishIncludes";
 import PropTypes from "prop-types";
@@ -61,62 +64,82 @@ const styles = theme => ({
   },
   avatar: {
     backgroundColor: red[500]
+  },
+  lastPrice:{
+    backgroundColor: red[100],
+    marginLeft: "auto",
+    padding: "5px 15px"
   }
 });
 class DishCardComplex extends Component {
-  handleDownClick = () => {
-    let currentCode = this.props.dish.code;
+  handleOptionClick = (dishIdx,iIdx, oIdx) => {
+    console.log(dishIdx,iIdx, oIdx);
+    // let currentCode = this.props.dish.code;
+    // let newDishes = this.props.data.dishes.slice(0);
+    // let index = newDishes.findIndex(d => d.code === currentCode);
+    // newDishes[index].number--;
+    // if (newDishes[index].number < 1) newDishes[index].number = 1;
+    // this.props.dispatch(fetchDataSuccess(newDishes));
+  };
+  handleDownClick = (dIdx) => {
     let newDishes = this.props.data.dishes.slice(0);
-    let index = newDishes.findIndex((d)=>d.code === currentCode);
-    newDishes[index].number--;
-    if(newDishes[index].number<1)newDishes[index].number=1;
+    newDishes[dIdx].number--;
+    if (newDishes[dIdx].number < 1) newDishes[dIdx].number = 1;
     this.props.dispatch(fetchDataSuccess(newDishes));
   };
-  handFavClick = () => {
-    let currentCode = this.props.dish.code;
+  handFavClick = (dIdx) => {
     let newDishes = this.props.data.dishes.slice(0);
-    let index = newDishes.findIndex((d)=>d.code === currentCode);
-    newDishes[index].favorite = newDishes[index].favorite=="1"?"0":"1";
+    newDishes[dIdx].favorite = newDishes[dIdx].favorite == "1" ? "0" : "1";
     this.props.dispatch(fetchDataSuccess(newDishes));
   };
-  handleUpClick = () => {
-    let currentCode = this.props.dish.code;
+  handleUpClick = (dIdx) => {
     let newDishes = this.props.data.dishes.slice(0);
-    let index = newDishes.findIndex((d)=>d.code === currentCode);
-    newDishes[index].number++;
+    newDishes[dIdx].number++;
     this.props.dispatch(fetchDataSuccess(newDishes));
   };
   handleAddToCart = () => {
-    let cart=this.props.data.cart.slice(0);
-    cart.push(Object.assign({}, this.props.dish));
-    this.props.dispatch(updateCart(cart));
-
-    console.log(cart);
-
-  }
+    try {
+      let cart = this.props.data.cart.slice(0);
+      cart.push(Object.assign({}, this.props.dish));
+      this.props.dispatch(updateCart(cart));
+      this.props.enqueueSnackbar(
+        "Successfully added " +
+          this.props.dish.number +
+          " " +
+          this.props.dish.name,
+        {
+          variant: "success"
+        }
+      );
+    } catch (err) {
+      this.props.enqueueSnackbar("Error occurred while was attemping to add ", {
+        variant: "error"
+      });
+    }
+  };
   //console.log(props.dishes);
   render() {
     const {
       classes,
+      dIdx:dIdx,
       dish: {
         favorite,
         number,
-        tag,
         code,
         name,
         description,
         basePrice,
+        lastPrice,
         imageUrl,
         includes
       },
       loading
     } = this.props;
-    const imageBaseUrl = (imageUrl ? imageUrl : "/dish.png");
+    const imageBaseUrl = imageUrl ? imageUrl : "/dish.png";
     return (
       <Card className={classes.card}>
         <CardHeader
           avatar={
-
             <Avatar aria-label="recipe" className={classes.avatar}>
               {number}
             </Avatar>
@@ -124,13 +147,13 @@ class DishCardComplex extends Component {
           action={
             <IconButton
               aria-label="add to favorites"
-              onClick={() => this.handFavClick()}
+              onClick={() => this.handFavClick(dIdx)}
             >
               <FavoriteIcon color={favorite === "1" ? `primary` : `inherit`} />
             </IconButton>
           }
           title={name}
-          subheader={`Price:${basePrice/100}$`}
+          subheader={`base Price:${basePrice / 100}$`}
         />
         <CardMedia
           className={classes.media}
@@ -141,23 +164,39 @@ class DishCardComplex extends Component {
           <Typography variant="body2" color="textSecondary" component="p">
             {description}
           </Typography>
-          <div>
+            {/* <DishIncludes key={`includes-${code}`} code={code} includes={includes} /> */}
             {!!includes &&
-              includes.map((include, index) => (
-                <DishIncludes
-                  key={`${code}-${index}`}
-                  includeId={`${code}-${index}`}
-                  include={include}
-                />
-              ))}
-          </div>
+              includes.map((include,iIdx) => (
+                <div key={`${dIdx}-${iIdx}`}>
+                  <Typography variant="h5" component="h5">
+                    {include.name}
+                  </Typography>
+                  {!!include.options &&
+                    include.options.map((option, oIdx) => (
+                      <Chip
+                        key={`${dIdx}-${iIdx}-${oIdx}`}
+                        label={`${option.name} ${option.adjustPrice}$`}
+                        onClick={()=>this.handleOptionClick(dIdx,iIdx,oIdx)}
+                        color={oIdx == include.optionSelected ? "secondary" : "default"}
+                      />
+                    ))}
+                </div>
+              ))
+              }
+
         </CardContent>
         <CardActions disableSpacing>
           <ButtonGroup>
-            <Button onClick={this.handleDownClick}>-</Button>
+            <Button onClick={()=>this.handleDownClick(dIdx)}>-</Button>
             <Button>{number}</Button>
-            <Button onClick={this.handleUpClick}>+</Button>
+            <Button onClick={()=>this.handleUpClick(dIdx)}>+</Button>
           </ButtonGroup>
+          <Chip
+              label={`Total: ${lastPrice/100}$`}
+              color="secondary"
+            />
+        </CardActions>
+        <CardActions disableSpacing>
           <Button
             type="submit"
             variant="contained"
@@ -195,6 +234,6 @@ const mapActionsToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapActionsToProps
-)(withStyles(styles)(DishCardComplex));
+)(withStyles(styles)(withSnackbar(DishCardComplex)));
 
 //export default ;

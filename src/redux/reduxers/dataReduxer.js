@@ -4,6 +4,7 @@ import {
   FETCH_DATA_LOADED,
   FETCH_DATA_SUCCESS,
   FETCH_SLIDE_SUCCESS,
+  UPDATE_PRICE,
   UPDATE_SEARCH,
   UPDATE_CART,
   CLOSE_MCART,
@@ -63,7 +64,6 @@ export default function(state = initialState, action) {
       return {
         ...state,
         cart: action.payload.data,
-        mcart: true
       };
     case OPEN_MCART:
       return {

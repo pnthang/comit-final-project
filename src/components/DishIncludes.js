@@ -1,37 +1,37 @@
 import React from "react";
-import RadioGroup from '@material-ui/core/RadioGroup';
-import DishIncludeOptions from "./DishIncludeOptions";
+import Typography from "@material-ui/core/Typography";
+import Chip from "@material-ui/core/Chip";
+//import DoneIcon from '@material-ui/icons/Done';
+
 function DishIncludes(props) {
-  const { name, options } = props.include;
-  const { includeId } = props;
-
-  const [value, setValue] = React.useState('');
-
-  const handleChange = event => {
-    setValue(event.target.value);
+  const handleOptionClick = (event) => {
+    // let currentCode = this.props.code;
+    // let newDishes = this.props.data.dishes.slice(0);
+    // let index = newDishes.findIndex(d => d.code === currentCode);
+    // console.log(event);
+    // newDishes[index].number--;
+    // if (newDishes[index].number < 1) newDishes[index].number = 1;
+    // this.props.dispatch(fetchDataSuccess(newDishes));
   };
+  const { includes,code} = props;
   return (
-    <div>
-      <h5>{name}</h5>
-      <RadioGroup
-        aria-label="position"
-        name="position"
-        value={value}
-        onChange={handleChange}
-        row
-      >
-        {!!options &&
-          options.map((option, index) => (
-
-            <DishIncludeOptions
-              key={`${includeId}-${index}`}
-              includeId={includeId}
-              optionValue={`${includeId}-${index}`}
-              option={option}
+    !!includes &&
+    includes.map(include => (
+      <div key={include.includeId}>
+        <Typography variant="h5" component="h5">
+          {include.name}
+        </Typography>
+        {!!include.options &&
+          include.options.map((option, index) => (
+            <Chip
+              key={`${include.includeId}-${index}`}
+              label={`${option.name} ${option.adjustPrice}$`}
+              onClick={handleOptionClick}
+              color={index == include.optionSelected ? "secondary" : "default"}
             />
           ))}
-      </RadioGroup>
-    </div>
+      </div>
+    ))
   );
 }
 export default DishIncludes;

@@ -4,12 +4,23 @@ import {
   FETCH_DATA_LOADED,
   FETCH_DATA_SUCCESS,
   FETCH_SLIDE_SUCCESS,
+  UPDATE_PRICE,
   UPDATE_SEARCH,
   UPDATE_CART,
   OPEN_MCART,
   CLOSE_MCART
 } from "../types";
 import axios from "axios";
+
+export function calLastPrice(dish) {
+  let {basePrice, includes} = dish;
+  let lastPrice = basePrice;
+  includes.forEach(function(include){
+     if(!!include.options){
+       lastPrice = parseInt(lastPrice)+ parseInt(include.options[includes.optionSelected].ajustPrice);
+     }
+  });
+}
 // Dishes
 export function doSearch(searchText) {
   return (dispatch, getState) => {

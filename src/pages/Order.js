@@ -48,8 +48,8 @@ class Order extends Component {
       );
     }
 
-    const recentDishesMarkup = dishes.map(dish => (
-      <DishCardComplex key={dish.code} dish={dish} />
+    const recentDishesMarkup = dishes.map((dish,dIdx) => (
+      <DishCardComplex key={dIdx} dIdx={dIdx} dish={dish} />
     ));
 
     return (

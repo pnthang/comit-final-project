@@ -3,8 +3,8 @@ import pink from '@material-ui/core/colors/pink';
 
 export default {
     palette: {
-        primary: pink,
-        secondary: blue,
+        primary: blue,
+        secondary: pink,
     },
     typography:{
         useNextVariants: true
